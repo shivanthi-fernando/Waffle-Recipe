@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffle Recepie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>How to make Waffles</h1>
+            
+            <img src="waffle.jpg" alt="waffle">
+
+            <p>
+            A waffle is a batter cake with a pattern of deep indentations on each side, formed by the gridlike design on each of the two hinged parts of the metal appliance (waffle iron) in which the cake is baked.
+
+            This recipe makes 10 waffles.
+            </p>
+
+        </header>
+
+        <section onmouseover="ingredientsHover()" onmouseout="ingredientsNormal()">
+            <h2>
+                Ingredients
+                <i id="ingredients" class="fa fa-th-list" aria-hidden="true"></i>
+            </h2>
+            
+            <ul>
+            <li> 4 eggs (whites and yolks separated) </li>
+            <li> 800ml milk </li>
+            <li> 1 tsp vanilla extract </li>
+            <li> 500g self raising flour </li>
+            <li> 4 tsp baking powder </li>
+            <li> pinch of salt </li>
+            <li> 50g caster suger </li>
+            <li> 200g melted unsalted butter (plus more for grasing the waffle iron) </li>
+            </ul>
+        </section>
+
+        <section onmouseover="preparationHover()" onmouseout="preparationNormal()">
+            <h2>
+            Preparation
+            <i id="preparation" class="fa fa-cutlery" aria-hidden="true"></i>
+            </h2>
+            
+            <ol>
+            <li> Preheat the waffle maker </li>
+            <li> Whisk the egg yolks with the milk and vanilla extract. </li>
+            <li> Add in the flour, baking powder and salt and whisk further. </li>
+            <li> Stir in the caster sugar. </li>
+            <li> Pour in the melted butter and stir until just combined. </li>
+            <li> In a seperate bowl, lightly beat the egg whites and carefully fold them into the mixture. Careful not to over-mix. </li>
+            <li> Once the waffle iron is ready, lightly grease the plates using butter on a piece of kitchen towel (you may not need to do this depending on your machine). </li>
+            <li> Ladle in the mixture. </li>
+            <li> For my waffle iron it takes between two, and two and a half minutes for the waffles to be cooked. </li>
+            <li> Remove the waffles, pile on your favourite toppings and enjoy. </li>
+            </ol>
+        </section>
+        
+        <footer>
+            <p> Copyright @shivanthifernando2020 </p> 
+        </footer>
+    </div>
+    <script>
+        function ingredientsHover() {
+		    document.getElementById("ingredients").style.fontSize = "300%";
+		}
+		  
+		function ingredientsNormal() {
+		    document.getElementById("ingredients").style.fontSize = "100%";
+		}
+
+        function preparationHover() {
+            document.getElementById("preparation").style.fontSize = "300%";
+        }
+
+        function preparationNormal() {
+		    document.getElementById("preparation").style.fontSize = "100%";
+		}
+    </script>
+    
+</body>
+</html>
